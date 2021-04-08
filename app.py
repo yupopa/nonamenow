@@ -37,7 +37,7 @@ class Predict:
     def display_output(self):
         st.image(self.img.to_thumb(500,500), caption='Uploaded Image')
         pred, pred_idx, probs = self.learn_inference.predict(self.img)
-        st.write(f'Prediction: {pred} red blood cell; Probability: {probs[pred_idx]:.04f}')
+        st.write(f'Prediction: {pred}; Probability: {probs[pred_idx]:.04f}')
 
  
 
